@@ -1,0 +1,106 @@
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones and some tablets: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    body {
+    	font-size: 16px;
+    }
+    h1 {
+    	font-size: 28px;
+    }
+    h2 {
+    	font-size: 28px;
+    }
+
+    p {
+    	font-size: 16px;
+    }
+    .hello {
+    	font-size: 22px;
+    }
+    .mobile-navbar {
+    	margin-top: 10px;
+    	padding-top: 10px;
+    	display: inline;
+    	visibility: visible;
+    }
+    .logo-only-mobile {
+    	visibility: visible;
+    	display: inline;
+    	float: left;
+    }
+    .logo-only-mobile h2{
+    	margin-left: 10px;
+    	font-size: 24px;
+    	color: black;
+
+    }
+    .mail-navbar{
+    	margin: 10px;
+    	margin-top: 18px;
+    	visibility: visible;
+    	display: inline;
+    	float: right;
+    }
+    .container-fluid {
+    	padding-right: 10px;
+    	padding-left: 10px;
+    }
+    .title-bar {
+    	margin-top: 10px;
+    	padding-top: 10px;
+    }
+    .about-project h6 {
+    	width: 100%;
+    	font-size: 18px;
+    }
+    .contact-bar, .navbar-fixed-top {
+    	display: none;
+    }
+    .person {
+    	margin-right: 10px;
+    	margin-top: 20px;
+    }
+    .window-upper-bar {
+    	font-size: 16px;
+    }
+
+    .scroller, .scroll-down {
+    	display: none;
+    }
+    .timeline-window {
+    	width: 75%;
+    }
+    .timeline-btn {
+    	margin: 5px;
+    }
+    .awesome-team {
+    	flex-direction: column;
+    	padding-right: 10px;
+  		padding-left: 10px;
+    }
+    .clients {
+    	padding-left: 10px;
+  		padding-right: 10px;
+    }
+   	#footer-company {
+    	padding-right: 10px;
+  		padding-left: 10px;
+    }
+
+}
