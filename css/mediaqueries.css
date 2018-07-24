@@ -298,6 +298,16 @@ and (-webkit-device-pixel-ratio : 3) {
     }
     #home {
         margin-top: 45px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #about-us {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .timeline-box {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 }
@@ -397,6 +407,10 @@ and (-webkit-device-pixel-ratio : 3) {
     }
     #home {
         padding-top: 10px;
+    }
+    .timeline-box {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 }
