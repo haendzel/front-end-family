@@ -6,7 +6,7 @@
 }
 html, body {
 	cursor: url('../img/pixel-cursor.png'), auto; /* pixelize big cursor */
-	background: linear-gradient(180deg, #bcdfff, #d7e8f7, #bcffc8);
+	background: linear-gradient(180deg, #dbedff, #2a9faf);
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
@@ -18,8 +18,9 @@ label {
 	display: block;
 }
 .container-fluid {
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-top: 70px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 .container {
 	margin: 0px;
@@ -82,6 +83,9 @@ h6 {
   font-color: #262626;
 
 }
+a:link {
+  color: white;
+}
 .row:after {
     content: "";
     display: table;
@@ -90,17 +94,19 @@ h6 {
 .our-navbar {
 	font-family: "Iconsolata", monospace;
 	font-size: 1.3rem;
-	background: #ddd;
+	background: #dbedff;
 	width: 100vw;
 	padding-top: 10px;
 	z-index: 5;
   padding-left: 100px;
 	padding-right: 100px;
+  padding-bottom: 50px;
 	height: 80px;
   transition:500ms ease;
-  background:transparent;
 }
-
+.our-navbar a:link {
+  color: black;
+}
 .our-navbar img {
   transition: height .3s .2s;
   height: 60px;
@@ -108,35 +114,46 @@ h6 {
 
 .our-navbar.scrolled {
   background: #f8f8f8;
-  height: 40px;
+  height: 50px;
+  color: #262626;
   border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+
+}
+.our-navbar.scrolled a:link {
+  color: #262626;
+  margin: -4px;
+}
+.our-navbar.scrolled a {
+  border-bottom: 0;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 .our-navbar.scrolled img {
   transition: height .3s;
   height: 36px;
+  margin-top: 3px;
   /*display: none;*/
 }
 
 .right-nav {
-	float: right;
 	text-align: right;
-	height: 80px;
 }
 
 .right-nav a {
-	margin-top: auto, 0;
-	padding-top: 30px;
-	padding-bottom: 30px;
+  font-family: 'Inconsolata', monospace;
+	padding-top: 22px;
+	padding-bottom: 23px;
 	margin-right: 10px;
 	font-size: 1.3em;
+  font-color: #262626;
 }
-.right-nav a.scrolled{
+.right-nav.scrolled a {
   margin-top: auto, 0;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 30px;
   margin-right: 10px;
-  font-size: 1.3em;
-  font-color: #f8f8f8;
 }
 
 .left-nav {
@@ -156,133 +173,23 @@ h6 {
 	line-height: 22px;
 	font-weight: 500;
 }
+
 .mobile-navbar {
+  margin: 0;
   z-index: 5;
   visibility: hidden;
   display: none;
-}
 }
 .logo {
 	margin-top: -10px;
 	margin-right: 13px;
 }
-.loadlogo {    /* load logo with preloader */
-	z-index: 10;
-	width: 15%;
-	height: 15%; 
-    top: 15vw; 
-	position: relative;
-    bottom: 0; 
-    left: 0; 
-    right: 0;
-    margin : auto; 
-}
-.preloader {
-  width: 100vw;
-  height: 100vw;
-  position: fixed;
-  top: 0; 
-  bottom: 0;
-  background: black;
-  z-index : 13; 
-}
-
-.percentage {
-  z-index: 13;
-  border: 1px solid #ccc;
-  text-align:center;
-  color: #fff;
-  line-height: 30px;
-  font-size : 15px;
-}
-
-.loader,
-.percentage{
-  height: 25px;
-  max-width: 300px; 
-  border: 2px solid #fff;
-  font-weight: 300;
-  position: absolute; 
-  top: 0; 
-  bottom: 0; 
-  left: 0; 
-  right: 0;
-  margin : auto; 
-}
-
-.loader:after,
-.percentage:after {
-  content: normal;
-  display: block;
-  background: white;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.trackbar {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  color: #fff;
-  text-align: center;
-  line-height: 30px;
-  overflow: hidden;
-  position: relative;
-  opacity: 0.99;
-}
-
-.loadbar {
-  width: 0%;
-  height: 100%;
-  background: repeating-linear-gradient(
-  45deg, 
-    #008737, 
-    #008737 10px, 
-    #69AF23 10px,
-    #69AF23 20px
-  ); /* Stripes Background Gradient */
-  box-shadow: 0px 0px 14px 1px #008737; 
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: flicker 5s infinite;
-  overflow: hidden;
-}
-
-.glow {
-  width: 0%;
-  height: 0%;
-  box-shadow: 0px 0px 60px 10px #008737;
-  position: absolute;
-  bottom: -5px;
-  animation: animation 5s infinite;
-}
-
-:link {
-color: #a6a6a6;
-}
-
-
-:visited {
-color: #0d0d0d;
-}
-
-
-a:hover {
-color: #333333;
-}
-
 #home {
-  padding-top: 20vh;
-  min-height: 85vh;
+  padding-top: 70px;
 }
 .window-upper-bar {
   background: #bcbcbc;
   order: 1;
-  width: 100%;
   padding: 5px;
   font-family: "Inconsolata", monospace;
   box-shadow: 12px 12px black;
@@ -292,7 +199,7 @@ color: #333333;
 .window-welcome {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px;
   overflow: hidden;
   border: 0px 1px 1px 1px solid black;
   background: #262626;
@@ -303,25 +210,35 @@ color: #333333;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.about-us{
+  color: #262626;
+  overflow: hidden;
+  border: 1px solid black;
+  background: #efefef;
+  box-shadow: 9px 9px black;
+  padding: 30px;
+}
+#our-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .awesome-team {
-  padding-right: 50px;
-  padding-left: 50px;
   display: flex;
   flex-direction: row;
 }
 .person {
 	color: #262626;
-	background: #ccc;
+	background: #efefef;
   box-shadow: 9px 9px black;
   border: 1px solid black;
   padding: 20px;
   margin-right: 20px;
+  margin-bottom: 30px;
   flex: 1;
 }
 .person img{
   opacity: 0.9;
-  border: 2px solid black;
-  margin: 5px;
+  padding: 10px;
 }
 .person:hover {
   color: #f8f8f8;
@@ -334,8 +251,6 @@ color: #333333;
 	position: relative;
 	text-align: center;
   padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 #clients { /* DANGER! other tag and other class*/
@@ -345,7 +260,7 @@ color: #333333;
 
 .companies {
   border: 1px solid black;
-  background: #ccc;
+  background: #efefef;
   box-shadow: 9px 9px black;
 }
 .companies:hover {
@@ -500,7 +415,7 @@ color: #333333;
 .form-contact-box {
   overflow: hidden;
   border: 1px solid black;
-  background: #ccc;
+  background: #efefef;
   box-shadow: 9px 9px black;
   padding: 70px;
   position: relative;
@@ -508,7 +423,7 @@ color: #333333;
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #efefef;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
@@ -536,10 +451,11 @@ input[type=submit]:hover {
   padding: 20px;
   overflow: hidden;
   border: 1px solid black;
-  background: #ccc;
+  background: #efefef;
   box-shadow: 9px 9px black;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .contact-bar {
   text-align: center;
@@ -644,14 +560,14 @@ input[type=submit]:hover {
   padding: 20px;
   overflow: hidden;
   border: 1px solid black;
-  background: #ccc;
+  background: #efefef;
   box-shadow: 9px 9px black;
 }
 .about-project {
   padding: 20px;
   overflow: hidden;
   border: 1px solid black;
-  background: #ccc;
+  background: #efefef;
   box-shadow: 9px 9px black;
 }
 .about-project h6 {
@@ -663,4 +579,33 @@ input[type=submit]:hover {
   max-width: 100%;
   height: auto;
   display: inline;
+}
+.margin div:last-child {
+  margin-left: auto;
+}
+.copyright {
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 3px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 25px;
+    background-image:url(../img/dots.png);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border: 1px solid black;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border: 2px solid black;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #f8f8f8; 
 }
