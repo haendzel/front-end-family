@@ -297,7 +297,7 @@ and (-webkit-device-pixel-ratio : 3) {
   		padding-left: 10px;
     }
     #home {
-        padding-top: 30px;
+        margin-top: 30px;
     }
 
 }
