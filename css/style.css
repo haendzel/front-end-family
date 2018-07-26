@@ -504,17 +504,21 @@ input[type=submit]:hover {
 }
 
 .popup {
-  margin: 70px auto;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 20px;
   background: #f8f8f8;
-  width: 40%;
+  overflow-y: auto;
   transition: all 3s ease-in-out;
   z-index: 12;
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border: 1px solid black;
+}
+.popup::-webkit-scrollbar {
+    width: 15px;
 }
 .popup h2 {
   margin-top: 0;
@@ -523,10 +527,10 @@ input[type=submit]:hover {
 }
 .popup .close {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 10px;
+  right: 10px;
   transition: all 200ms;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   text-decoration: none;
   color: #262626;
@@ -535,7 +539,6 @@ input[type=submit]:hover {
   color: #262626;
 }
 .popup .content {
-  max-height: 40%;
   overflow: auto;
 }
 
