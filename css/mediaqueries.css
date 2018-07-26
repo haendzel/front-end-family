@@ -309,6 +309,14 @@ and (-webkit-device-pixel-ratio : 3) {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .popup {
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+    }
 
 }
 

@@ -95,11 +95,10 @@ a:link {
 	font-family: "Iconsolata", monospace;
 	font-size: 1.3rem;
 	background: #dbedff;
-	width: 100vw;
 	padding-top: 10px;
 	z-index: 5;
-  padding-left: 100px;
-	padding-right: 100px;
+  padding-left: 50px;
+	padding-right: 50px;
   padding-bottom: 50px;
 	height: 80px;
   transition:500ms ease;
@@ -220,21 +219,35 @@ a:link {
 }
 #our-team {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 .awesome-team {
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
 }
 .person {
+  margin: auto;
 	color: #262626;
 	background: #efefef;
   box-shadow: 9px 9px black;
   border: 1px solid black;
   padding: 20px;
-  margin-right: 20px;
-  margin-bottom: 30px;
   flex: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.person:last-child {
+  margin-right: 0px;
+}
+.person::nth-last-child(-n+3) {
+  .margin-bottom: 0px
 }
 .person img{
   opacity: 0.9;
@@ -247,7 +260,6 @@ a:link {
 }
 .clients {
 	color: #262626;
-	overflow: hidden;
 	position: relative;
 	text-align: center;
   padding-bottom: 30px;
@@ -255,7 +267,6 @@ a:link {
 
 #clients { /* DANGER! other tag and other class*/
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .companies {
@@ -541,7 +552,6 @@ input[type=submit]:hover {
 .popup .content {
   overflow: auto;
 }
-
 .title {
   padding-top: 10px;
   padding-bottom: 5px;
@@ -589,7 +599,7 @@ input[type=submit]:hover {
 .copyright {
   text-align: center;
   font-size: 0.8em;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 /* width */
