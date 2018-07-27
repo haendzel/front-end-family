@@ -225,7 +225,22 @@ a:link {
 #our-team {
   padding-top: 30px;
 }
+#our-team-mobile {
+  padding-top: 30px;
+  display: none;
+}
 .awesome-team {
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+.awesome-team-mobile {
   list-style: none;
   display: -webkit-box;
   display: -moz-box;
@@ -684,7 +699,7 @@ input[type=text]:focus {
   background: #efefef;
   box-shadow: 9px 9px black;
   border: 1px solid black;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 20px;
   z-index: 1;
   border-radius: 0px;

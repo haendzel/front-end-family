@@ -202,6 +202,12 @@ and (-webkit-device-pixel-ratio : 3) {
     #home {
         padding-top: 10px;
     }
+    #our-team-mobile {
+        visibility: visible;
+    }
+    #our-team {
+        visibility: none;
+    }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 667px) {
@@ -317,6 +323,12 @@ and (-webkit-device-pixel-ratio : 3) {
         right: 0;
         height: 100vh;
     }
+    #our-team-mobile {
+        visibility: visible;
+    }
+    #our-team {
+        visibility: none;
+    }
 
 }
 
@@ -419,6 +431,14 @@ and (-webkit-device-pixel-ratio : 3) {
     .timeline-box {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    #our-team-mobile {
+        display: block;
+        visibility: visible;
+    }
+    #our-team {
+        display: none;
+        visibility: hidden;
     }
 
 }
