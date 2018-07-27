@@ -432,13 +432,9 @@ and (-webkit-device-pixel-ratio : 3) {
         padding-left: 10px;
         padding-right: 10px;
     }
-    #our-team-mobile {
-        display: block;
-        visibility: visible;
-    }
-    #our-team {
-        display: none;
-        visibility: hidden;
+    .panel-group {
+        flex-direction: column;
+        margin: 0px;
     }
 
 }
