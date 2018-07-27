@@ -699,6 +699,4 @@ input[type=text]:focus {
   background: transparent;
 }
 #accordion {
-  display: inline;
-  width: 100%;
 }
