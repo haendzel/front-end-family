@@ -653,4 +653,13 @@ and (-webkit-device-pixel-ratio : 3) {
     #our-team-desktop {
         display: none;
     }
+    .timeline-window {
+        display: row;
+        flex-direction: column;
+    }
+    .wrapper {
+    }
+    .card {
+        flex-direction: column;
+    }
 }
