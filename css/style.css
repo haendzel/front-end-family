@@ -225,10 +225,6 @@ a:link {
 #our-team {
   padding-top: 30px;
 }
-#our-team-mobile {
-  padding-top: 30px;
-  visibility: visible;
-}
 .clients {
 	color: #262626;
 	position: relative;
@@ -458,6 +454,7 @@ input[type=text]:focus {
   -ms-transform: translateY(-95%);
   transform: translateY(-95%);
   box-shadow: 3px 3px black;
+  z-index: 2;
 }
 
 /* Style the icon bar links */
@@ -696,4 +693,48 @@ input[type=text]:focus {
 }
 .panel.panel-default::nth-of-type(6) {
   margin-right: 0px;
+}
+#our-team-mobile {
+  display: none;
+}
+#our-team-desktop {
+  display: block;
+}
+.awesome-team {
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+.person {
+  margin: auto;
+  color: #262626;
+  background: #efefef;
+  box-shadow: 9px 9px black;
+  border: 1px solid black;
+  padding: 20px;
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.person:last-child {
+  margin-right: 0px;
+}
+.person::nth-last-child(-n+3) {
+  .margin-bottom: 0px
+}
+.person img{
+  opacity: 0.9;
+  padding: 10px;
+}
+.person:hover {
+  color: #f8f8f8;
+  background: #262626;
+  transition: ease 0.3s;
 }
