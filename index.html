@@ -1,415 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Front-End Family</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/style.css"> 
-<link rel="stylesheet" href="css/mediaqueries.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Lato:400,700" rel="stylesheet">
-<script src=js/scroll.js></script>
-  </head>
-  <body>
-  <div class="container">
-    <div class="row">
-      <nav class="col-10 mobile-navbar">
-        <a href="#index.html" class="logo-navbar"><img class="awesomelogo" src="img/logo.png"/></a>
-        <a href="#index.html" class="logo-only-mobile"><h2>front-end.family</h2></a>
-      </nav>
-    </div>
-  </div>
-<div class="container-fluid">
-  <div class="container">
-    <div class="row">
-  <nav class="col-12 navbar our-navbar navbar-fixed-top">
-  <div class="left-nav"><a href="#home"><img src="img/logo.svg" class="logo animated shake"></a></div>
-  <div class="right-nav">
-        <button class="btn"><a href="index.html/#about-us">About us</a></button>
-        <button class="btn"><a href="index.html/#our-team">Team</a></button>
-        <button class="btn"><a href="index.html/#clients">Clients</a></button>
-        <button class="btn"><a href="index.htm/#projects">Projects</a></button>         
-        <button class="btn"><a href="index.htm/#project">EN</a><i class="fa fa-caret-down"></i></button>
-  </div>
-  </nav>
-  </div>
-  </div>
-  <div class="dropdown">
-  <div class="dropdown-content">
-        <a href="#">UA</a>
-        <a href="#">PL</a>
-  </div>
-  </div>
-  <div class="container">
-      <div class="row">
-      <div class="home" id="home">
-      <div class="col-12 window-upper-bar">front-end.family</div>
-      <div class="col-12 window-welcome">
-        <h1>{</h1>
-        <h1><span class="typing" id="typing-element"></span></h1>
-        	 <h2 class="hello"><a class "link" href="front.end.family">front-end.family</a> inventing and developing your future. </br>
-            we specialize in code </br></h2>
-        <h1>}</h1>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-  <div class="col 12 scroll-downs">
-    <div class="scroller"><a href="#about-us"><img src="img/mouse.png"/></a></div>
-  </div>
-  </div>
-  <div class="container">
-    <div class="container" id="about-us">
-      <div class="row">
-      <h2 class="title">About us</h2>
-      <div class="col-12 about-us">
-        <center><img src="img/old-apple.png"></center>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. <br /><b>We specialize in Javascript, HTML, CSS, Sass, Less, PHP, Wordpress, Drupal, jQuery, Angular.js, Node.js, Vue.js and GIT etc.</b>
-      </div>
-      </div>
-    </div>
-  </div>
-<div class="container" id="our-team-mobile">
-  <h2 class="title">Meet our team</h2>
-    <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Front-end family</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Front-End Family" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+		<script src="js/slide.js"></script>
+		<!--[if lte IE 8]>
+			 <link rel="stylesheet" type="text/css" href="css/simple.css" />
+		<![endif]-->
+    </head>
+    <body>	
+    		<div class="fe-container">
+
+    		<div class="logo animated"><img src="img/logo.svg"></br></div>
+
+			<div class="contact-bar">
+      		<a href="#mailus"><img src="img/post.png"/></a>
+    		</div>
+			
+				<input type="radio" name="radio-set" checked="checked" id="control-1"/>
+				<a href="#fe-panel-1">Terminal</a>
+				<input type="radio" name="radio-set" id="control-2"/>
+				<a href="#fe-panel-2">About us</a>
+				<input type="radio" name="radio-set" id="control-3"/>
+				<a href="#fe-panel-3">Our team</a>
+				<input type="radio" name="radio-set" id="control-4"/>
+				<a href="#fe-panel-4">Projects</a>
+				<input type="radio" name="radio-set" id="control-5"/>
+				<a href="#fe-panel-5">Contact</a>
+				
+				<div class="scroll">
+					
+					<section class="fe-panel" id="terminal">
+
+						<div class="language">
+						<div class="btn"><a href="#eng">English </a><i class="fa fa-caret-down"></i></div>
+    					<div class="dropdown">
+  						<div class="dropdown-content">
+        				<a href="#ua">Italiano </a>
+        				<a href="#pl">German </a>
+  						</div>
+  						</div>
+
+						<div class="home" id="home">
+					      <div class="window-upper-bar"><center>front-end.family —— bash —— 150x200</center></div>
+					      <div class="window-welcome">
+
+					        <h1>{</h1>
+					        <h1 class="type"><span class="typing" id="typing-element"></span></h1>
+					        	 <h1 class="welcome">Front-End Family inventing and developing your future. </br>
+					            we specialize in pure code </br></h1>
+					        <h1>}</h1>
+					      </div>
+					      </div>
+					  </div>
+					</section>
+		
+					<section class="fe-panel" id="about-us">
+						
+					    
+					      <div class="about-us">
+					        <center><img src="img/old-apple.png"></center>
+					        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. <br /><b>We specialize in Javascript, HTML, CSS, Sass, Less, PHP, Wordpress, Drupal, jQuery, Angular.js, Node.js, Vue.js and GIT etc.</b>
+					      </div>
+
+
+					</section>
+
+					<section class="fe-panel" id="our-team">
+
+						<div class="team" id="team">
+    <div class="fe-panel-group" id="accordion">
+        <div class="fe-panel fe-panel-default">
+            <div class="fe-panel-heading">
+                <div class="fe-panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                     <h3>Pavlo Ivanichenko</h3>
                     <p>CEO & Founder</p></a>
                 </div>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
+            <div id="collapseOne" class="fe-panel-collapse collapse">
+                <div class="fe-panel-body">
                     <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
+        <div class="fe-panel fe-panel-default">
+            <div class="fe-panel-heading">
+                <div class="fe-panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                     <h3>Tom Stronghold</h3>
                     <p>Senior Front-end</p></a>
                 </div>
             </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseTwo" class="fe-panel-collapse collapse">
+                <div class="fe-panel-body">
                     <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
+        <div class="fe-panel fe-panel-default">
+            <div class="fe-panel-heading">
+                <div class="fe-panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                         <h3>Ally Zorea</h3>
                         <p>Graphic Designer</p></a>
                 </div>
             </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseThree" class="fe-panel-collapse collapse ">
+                <div class="fe-panel-body">
                     <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
+        <div class="fe-panel fe-panel-default">
+            <div class="fe-panel-heading">
+                <div class="fe-panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
                     <h3>Fernando Alonso</h3>
                     <p>F1 Race driver</p></a>
                 </div>
             </div>
-            <div id="collapseFour" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseFour" class="fe-panel-collapse collapse">
+                <div class="fe-panel-body">
                     <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
             </div>
         </div>
-    <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
+    <div class="fe-panel fe-panel-default">
+            <div class="fe-panel-heading">
+                <div class="fe-panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
                     <h3>Robert Kubica</h3>
                     <p>F1 Race driver</p></a>
                 </div>
             </div>
-            <div id="collapseFive" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseFive" class="fe-panel-collapse collapse">
+                <div class="fe-panel-body">
                     <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
+        <div class="fe-panel fe-panel-default">
+            <div class="fe-panel-heading">
+                <div class="fe-panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
                     <h3>Filip Handzel</h3>
                     <p>Junior Front-end & Creative director</p></a>
                 </div>
             </div>
-            <div id="collapseSix" class="panel-collapse collapse">
-                <div class="panel-body">
+            <div id="collapseSix" class="fe-panel-collapse collapse">
+                <div class="fe-panel-body">
                     <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-<div class="container" id="our-team-desktop">
-  <h2 class="title">Meet our team</h2>
-    <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                    <h3>Pavlo Ivanichenko</h3>
-                    <p>CEO & Founder</p></a>
-                </div>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                    <h3>Tom Stronghold</h3>
-                    <p>Senior Front-end</p></a>
-                </div>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                        <h3>Ally Zorea</h3>
-                        <p>Graphic Designer</p></a>
-                </div>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                    <h3>Fernando Alonso</h3>
-                    <p>F1 Race driver</p></a>
-                </div>
-            </div>
-            <div id="collapseFour" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </div>
-        </div>
-    <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                    <h3>Robert Kubica</h3>
-                    <p>F1 Race driver</p></a>
-                </div>
-            </div>
-            <div id="collapseFive" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-                    <h3>Filip Handzel</h3>
-                    <p>Junior Front-end & Creative director</p></a>
-                </div>
-            </div>
-            <div id="collapseSix" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    <center><img src="img/portrait.jpg"></center>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
             </div>
         </div>
       </div>
   </div>
-  <div class="container" id="clients">
-    <div class="row">
-  <h2 class="title">Our clients</h2>
-  <div class="clients">
-  	<div class="col-12 companies">
-  	<img src="img/agh.png" class="img-responsive">
-  	<img src="img/asp.png" class="img-responsive">
-  	<img src="img/UN.png" class="img-responsive">
-    <img src="img/UN.png" class="img-responsive">
-    <img src="img/UN.png" class="img-responsive">
-  	<img src="img/dbank.png" class="img-responsive">
-  </div>
-  </div>
-  </div>
-</div>
-    <div class="container">
-      <div class="row">
-        <h2 class="title">Our timeline with projects</h2>
-          <div class="col-12 timeline-box">
-           <div class="timeline-window animated zoomIn">
+					</section>
+					
+					<section class="fe-panel" id="projects">
+
+			<div class="timeline-box">
+            <div class="timeline-window animated fadeIn">
             <div class="card-window">
             <div class="card"><img src="img/1.png">
-            <div class="info">
-                <h1>Untitled</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                <button>Read More</button>
-                </div>
+	            	<div class="info">
+	                <h1>Untitled</h1>
+	                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+	                <button>Read More</button>
+	                </div>
                 </div>
                 <div class="card"><img src="img/1.png">
-            <div class="info">
-                <h1>Untitled</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                <button>Read More</button>
-                </div>
+	            	<div class="info">
+	                <h1>Untitled</h1>
+	                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+	                <button>Read More</button>
+	                </div>
                 </div>
                 <div class="card"><img src="img/2.png">
-            <div class="info">
-                <h1>Untitled</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                <button>Read More</button>
-                </div>
+	            	<div class="info">
+	                <h1>Untitled</h1>
+	                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+	                <button>Read More</button>
+	                </div>
                 </div>
                 <div class="card"><img src="img/3.png">
-            <div class="info">
-                <h1>Untitled</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                <button>Read More</button>
-                </div>
+	            	<div class="info">
+	                <h1>Untitled</h1>
+	                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+	                <button>Read More</button>
+	                </div>
                 </div>
                 </div>
                </div>
-               <div class="timeline-window animated zoomIn">
+               <div class="timeline-window animated fadeIn">
                 <div class="card-window">
-            <div class="card"><img src="img/1.png">
-            <div class="info">
-                <h1>Untitled</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                <button>Read More</button>
-                </div>
-                </div>
-                <div class="card"><img src="img/1.png">
-            <div class="info">
-                <h1>Untitled</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                <button>Read More</button>
-                </div>
+            	<div class="card"><img src="img/1.png">
+	            	<div class="info">
+	                <h1>Untitled</h1>
+	                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+	                <button>Read More</button>
+	                </div>
                 </div>
                 <div class="card"><img src="img/1.png">
-            <div class="info">
-                <h1>Untitled</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                <button>Read More</button>
+	            	<div class="info">
+	                <h1>Untitled</h1>
+	                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+	                <button>Read More</button>
+	                </div>
                 </div>
+                <div class="card"><img src="img/1.png">
+	            	<div class="info">
+	                <h1>Untitled</h1>
+	                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+	                <button>Read More</button>
+	                </div>
                 </div>
                 </div>
                </div>
-               <div class="timeline-window animated zoomIn">
+               <div class="timeline-window animated fadeIn">
                 <div class="card-window">
-            <div class="card"><img src="img/1.png">
-            <div class="info">
-                <h1>Untitled</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                <button>Read More</button>
+		            <div class="card"><img src="img/1.png">
+		            <div class="info">
+	                <h1>Untitled</h1>
+	                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+	                <button>Read More</button>
                 </div>
                 </div>
                 <div class="card"><img src="img/1.png">
-            <div class="info">
-                <h1>Untitled</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                <button>Read More</button>
-                </div>
-                </div>
-                <div class="card"><img src="img/1.png">
-            <div class="info">
-                <h1>Untitled</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                <button>Read More</button>
-                </div>
+	            	<div class="info">
+	                <h1>Untitled</h1>
+	                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+	                <button>Read More</button>
+	                </div>
                 </div>
                 <div class="card"><img src="img/1.png">
-            <div class="info">
-                <h1>Untitled</h1>
-                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
-                <button>Read More</button>
+	            	<div class="info">
+	                <h1>Untitled</h1>
+	                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+	                <button>Read More</button>
+	                </div>
                 </div>
+                <div class="card"><img src="img/1.png">
+	            	<div class="info">
+	                <h1>Untitled</h1>
+	                <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+	                <button>Read More</button>
+                	</div>
                 </div>
                 </div>
                </div>
-               <div class="col-12 timeline-bar">
+               <div class="timeline-bar">
               <button class="timeline-btn" onclick="currentDiv(1)">2016</button>
               <button class="timeline-btn" onclick="currentDiv(2)">2017</button>
               <button class="timeline-btn" onclick="currentDiv(3)">2018</button>
             </div>
-              </div>
-          </div>
-        </div>
-    <div class="container">
-  <div class="container">
-   <div class="col-12 footer-company" id="footer-company">
-      <div class="footer-box margin">
-        <div class="office">Silicon Valley  •  231-5531 Computers Street  •  Santa Monica, California, USA </div>
-        <a href="facebook.com" class="social-media"><img src="img/facebook.png"/></a>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="contact-bar">
-      <a href="#mailus"><img src="img/post.png"/></a>
-    </div>
-  </div>
-</body>
-<div id="mailus" class="overlay">
+            </div>
+
+            		<div class="companies">
+					<div class="text-clients">Our clients: </div>
+					<img src="img/agh.png" class="img-responsive">
+					<img src="img/agh.png" class="img-responsive">
+					<img src="img/agh.png" class="img-responsive">
+					<img src="img/agh.png" class="img-responsive">
+					</div>
+
+					</section>
+
+					<section class="fe-panel" id="contact">	
+						<div class="footer-company" id="footer-company">
+     					<div class="footer-box margin">
+        				<div class="office">Silicon Valley  •  231-5531 Computers Street  •  Santa Monica, California, USA </div>
+       					<a href="facebook.com" class="social-media"><img src="img/facebook.png"/></a>
+					</section>
+
+				</div><!-- // scroll -->
+				
+			</div><!-- // container -->
+			<div id="mailus" class="overlay">
   <div class="content">
   <div class="col-10 popup">
     <h2>Let's talk us!</h2>
@@ -424,27 +314,21 @@
         <option value="private">Private</option>
         <option value="comapny">Company</option>
         </select>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
         <input type="submit" value="Submit" class="butn">
     </form>
   </div>
-</div>
-</div>
-    <div class="container">
-    <div class="row">
-      <div class="copyright">Design and code with <img src="img/love.png"> by Filip Handzel</div>
-    </div>
   </div>
-</div>
-   <script src="js/slide.js"></script>
+  </div>
+        </div>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
    <script>
    		var typed = new Typed('#typing-element', {
-  			strings: ['We are developers', 'We are coders', 'We are designers', 'We are family'],
+  			strings: ['Welcome everyone!', 'We are developers', 'We are coders', 'We are designers', 'We are family'],
   			typeSpeed: 120,
   			startDelay: 2000,
   			loop: true
 		})
    </script>
-</body>
+	</body>
 </html>
