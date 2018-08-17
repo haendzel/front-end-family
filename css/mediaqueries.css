@@ -435,6 +435,7 @@ font-size: 8px;
     font-size: 21px;
     padding: 7px;
     }
+<<<<<<< HEAD
 .web-technologies {
     margin: 10px;
 }
@@ -446,4 +447,15 @@ color: #000000;
 text-decoration: none;
 font-size: 8px;
 }
+=======
+    .timeline-window {
+        display: row;
+        flex-direction: column;
+    }
+    .wrapper {
+    }
+    .card {
+        flex-direction: column;
+    }
+>>>>>>> 499c2d4304dab917e47bcfe700053250621947f1
 }
