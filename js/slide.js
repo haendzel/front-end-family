@@ -1,4 +1,4 @@
-    var slideIndex = 2;
+    var slideIndex = 1;
     showDivs(slideIndex);
 
     function plusDivs(n) {
@@ -11,16 +11,16 @@
 
     function showDivs(n) {
       var i;
-      var x = document.getElementsByClassName("timeline-window");
-      var btn = document.getElementsByClassName("timeline-btn");
+      var x = document.getElementsByClassName("timeline-window", "window-inner");
+      var btn = document.getElementsByClassName("fe-btn");
       if (n > x.length) {slideIndex = 1}    
       if (n < 1) {slideIndex = x.length}
       for (i = 0; i < x.length; i++) {
          x[i].style.display = "none";  
       }
       for (i = 0; i < btn.length; i++) {
-         btn[i].className = btn[i].className.replace(" timeline-btn-active", "");
+         btn[i].className = btn[i].className.replace("fe-btn:active", "");
       }
-      x[slideIndex-1].style.display = "block";  
-      btn[slideIndex-1].className += " timeline-btn-active";
+      x[slideIndex-1].style.display = "flex";  
+      btn[slideIndex-1].className += " ";
       }
