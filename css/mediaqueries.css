@@ -104,10 +104,9 @@
 .fe-panel-group > .fe-panel-default {
   flex-basis: calc(50% - 14px);
 }
-a {
-color: #000000;
-text-decoration: none;
-font-size: 8px;
+.project {
+    width: 47%;
+    margin: 7px;
 }
 }
 
@@ -156,7 +155,7 @@ font-size: 8px;
     .popup {
         margin: 10px;
         overflow: hidden;
-        width: 100%;
+        width: 95%;
         height: 80%;
     }
 #terminal {
@@ -206,10 +205,13 @@ font-size: 8px;
 .responsive {
     margin: 5px;
 }
-a {
-color: #000000;
-text-decoration: none;
-font-size: 8px;
+.project {
+    width: 98%;
+    margin: 4px;
+}
+.policy {
+    font-size: 10px;
+    padding: 3px;
 }
 }
 /*-------------------------------------------------------------------------------------*/
@@ -258,7 +260,7 @@ font-size: 8px;
     .popup {
         margin: 10px;
         overflow: hidden;
-        width: 100%;
+        width: 95%;
         height: 80%;
     }
 #terminal {
@@ -318,10 +320,13 @@ font-size: 8px;
 .responsive {
     margin: 5px;
 }
-a {
-color: #000000;
-text-decoration: none;
-font-size: 8px;
+.project {
+    width: 96%;
+    margin: 6px;
+}
+.policy {
+    font-size: 10px;
+    padding: 3px;
 }
 }
 /*-------------------------------------------------------------------------------------*/
@@ -378,7 +383,7 @@ font-size: 8px;
     .popup {
         margin: 10px;
         overflow: hidden;
-        width: 100%;
+        width: 95%%;
         height: 80%;
     }
 #terminal {
@@ -435,27 +440,18 @@ font-size: 8px;
     font-size: 21px;
     padding: 7px;
     }
-<<<<<<< HEAD
 .web-technologies {
     margin: 10px;
 }
 .responsive {
     margin: 5px;
 }
-a {
-color: #000000;
-text-decoration: none;
-font-size: 8px;
+.project {
+    width: 96%;
+    margin: 5px;
 }
-=======
-    .timeline-window {
-        display: row;
-        flex-direction: column;
-    }
-    .wrapper {
-    }
-    .card {
-        flex-direction: column;
-    }
->>>>>>> 499c2d4304dab917e47bcfe700053250621947f1
+.policy {
+    font-size: 10px;
+    padding: 3px;
+}
 }
