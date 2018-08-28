@@ -1,25 +1,59 @@
 {
-  "name": "website-kopia",
-  "version": "1.0.0",
-  "description": "Main website of the Front-End Family :+1:",
+  "name": "front-end-family",
+  "version": "0.0.1",
+  "description": "The main website of the Front-End.Family",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --port=3000 --host=0.0.0.0 --mode=development --watch --hot",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haendzel/website.git"
+    "url": "git+https://github.com/pashaproton/front-end-family.git"
   },
-  "keywords": [],
-  "author": "Filip Handzel",
+  "author": "Pavlo Ivanichenko and Filip Handzel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/haendzel/website/issues"
+    "url": "https://github.com/pashaproton/front-end-family/issues"
   },
-  "homepage": "https://github.com/haendzel/website#readme",
+  "homepage": "https://github.com/pashaproton/front-end-family#readme",
   "devDependencies": {
-    "webpack": "^4.17.1",
-    "webpack-cli": "^3.1.0"
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "cssnano": "^4.0.5",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-discard-comments": "^4.0.0",
+    "postcss-file": "0.0.4",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-preset-env": "^5.3.0",
+    "standard": "^11.0.1",
+    "standard-loader": "^6.0.1",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "classnames": "^2.2.6",
+    "flag-icon-css": "^3.0.0",
+    "history": "^4.7.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-anchor-link-smooth-scroll": "^1.0.11",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-typed": "^1.0.9"
   }
 }

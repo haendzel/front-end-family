@@ -1,0 +1,97 @@
+.fe-panel.fe-panel-default {
+  color: #262626;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  z-index: 1;
+  text-align: center;
+  flex: 1;
+  border:2px solid black;
+  padding:6px 6px 6px 6px;
+  background:lightgrey;
+  box-shadow:2px 2px 0px black, inset 2px 2px 0px #fff;
+}
+.fe-panel-title {
+  font-size: 20px;
+}
+.fe-panel-heading {
+ background: transparent;
+}
+.fe-panel-heading:hover {
+ background: #b7b7b7;
+}
+.fe-panel-heading a {
+  color: #262626;
+  text-decoration: none;
+}
+.fe-panel-heading a:hover {
+  color: #262626;
+  text-decoration: none;
+}
+.fe-panel-default >.fe-panel-heading{
+}
+.fe-panel-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fe-panel-group > .fe-panel-default {
+  display: flex; 
+  flex-basis: calc(32% - 14px);
+  margin: 5px;  
+  justify-content: center;
+  flex-direction: column;
+}
+.fe-panel-group > .fe-panel-default > .fe-panel-default {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.fe-panel.fe-panel-default::nth-first-child(-n+3) {
+  .margin-bottom: 20px
+}
+.fe-panel .fe-panel-default img{
+  opacity: 0.9;
+  padding: 5px;
+  padding-top: 10px;
+  width: -70%;
+}
+.fe-panel .fe-panel-default p{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.fe-panel.fe-panel-default::nth-of-type(3) {
+  margin-right: 0px;
+}
+.fe-panel.fe-panel-default::nth-of-type(6) {
+  margin-right: 0px;
+}
+.fe-panel-collapse.collapse.in {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+}
+.fe-panel.fe-panel-default:hover {
+  background: #b7b7b7;
+}
+.window-inner {
+  border:2px solid black;
+  background: white;
+  padding: 40px;
+  box-shadow: 2px 2px 0px #fff;
+}
+.responsive {
+    width: 70%;
+    margin: 5px;
+    height: auto;
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); 
+    -webkit-transition: all .5s ease-in-out;  
+}
+
+.responsive:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+.private-contact {
+  display: flex;
+  flex-direction: column;
+}

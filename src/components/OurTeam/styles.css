@@ -1,0 +1,56 @@
+#our-team {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.window {
+  border:2px solid black;
+  padding:6px 6px 6px 6px;
+  background:lightgrey;
+  box-shadow:2px 2px 0px black, inset 2px 2px 0px #fff;
+}
+.window-header {
+  margin-bottom:6px;
+  background:lightgrey;
+}
+.window-header{
+  background-size: 100% 2px;
+  text-align:center;
+}
+.window-header span{
+  margin:auto 0;
+  background:lightgrey;
+  text-align:center;
+  padding:0px 6px 2px 6px;
+  top:0px;
+  font-family: Consolas, monaco;
+  letter-spacing:0.01em; 
+  font-size: 15px;
+}
+.team {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fe-panel-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fe-panel-group > .fe-panel-default {
+  display: flex; 
+  flex-basis: calc(32% - 14px);
+  margin: 5px;  
+  justify-content: center;
+  flex-direction: column;
+}
+.fe-panel-group > .fe-panel-default > .fe-panel-default {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
