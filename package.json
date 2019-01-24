@@ -1,6 +1,6 @@
 {
   "name": "front-end-family",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The main website of the Front-End.Family",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pashaproton/front-end-family.git"
+    "url": "git+https://github.com/haendzel/website.git"
   },
-  "author": "Pavlo Ivanichenko and Filip Handzel",
+  "author": "Filip Handzel and Pavlo Ivanichenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pashaproton/front-end-family/issues"
+    "url": "https://github.com/haendzel/website/issues"
   },
-  "homepage": "https://github.com/pashaproton/front-end-family#readme",
+  "homepage": "https://github.com/haendzel/website#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.6",
@@ -40,7 +40,7 @@
     "style-loader": "^0.22.1",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",

@@ -10,6 +10,6 @@ content.id = contentId
 document.body.appendChild(content)
 
 ReactDom.render(
-  <App />,
+  <App/>,
   document.getElementById(contentId)
 )
